@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh; }
+
+.calendar {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(7, 100px); }
+  .calendar div {
+    background: #eee;
+    border: 1px solid #000;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: background 0.5s, -webkit-transform 0.5s;
+    transition: background 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, background 0.5s;
+    transition: transform 0.5s, background 0.5s, -webkit-transform 0.5s;
+    display: none; }
+    .calendar div:before {
+      font-size: 30px;
+      margin: auto; }
+    .calendar div:hover {
+      background: pink;
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      cursor: pointer; }
+
+.calendar-1 > div:nth-child(-n + 1) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-1 > div:nth-child(-n + 1):before {
+    content: counter(div); }
+
+.calendar-2 > div:nth-child(-n + 2) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-2 > div:nth-child(-n + 2):before {
+    content: counter(div); }
+
+.calendar-3 > div:nth-child(-n + 3) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-3 > div:nth-child(-n + 3):before {
+    content: counter(div); }
+
+.calendar-4 > div:nth-child(-n + 4) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-4 > div:nth-child(-n + 4):before {
+    content: counter(div); }
+
+.calendar-5 > div:nth-child(-n + 5) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-5 > div:nth-child(-n + 5):before {
+    content: counter(div); }
+
+.calendar-6 > div:nth-child(-n + 6) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-6 > div:nth-child(-n + 6):before {
+    content: counter(div); }
+
+.calendar-7 > div:nth-child(-n + 7) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-7 > div:nth-child(-n + 7):before {
+    content: counter(div); }
+
+.calendar-8 > div:nth-child(-n + 8) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-8 > div:nth-child(-n + 8):before {
+    content: counter(div); }
+
+.calendar-9 > div:nth-child(-n + 9) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-9 > div:nth-child(-n + 9):before {
+    content: counter(div); }
+
+.calendar-10 > div:nth-child(-n + 10) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-10 > div:nth-child(-n + 10):before {
+    content: counter(div); }
+
+.calendar-11 > div:nth-child(-n + 11) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-11 > div:nth-child(-n + 11):before {
+    content: counter(div); }
+
+.calendar-12 > div:nth-child(-n + 12) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-12 > div:nth-child(-n + 12):before {
+    content: counter(div); }
+
+.calendar-13 > div:nth-child(-n + 13) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-13 > div:nth-child(-n + 13):before {
+    content: counter(div); }
+
+.calendar-14 > div:nth-child(-n + 14) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-14 > div:nth-child(-n + 14):before {
+    content: counter(div); }
+
+.calendar-15 > div:nth-child(-n + 15) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-15 > div:nth-child(-n + 15):before {
+    content: counter(div); }
+
+.calendar-16 > div:nth-child(-n + 16) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-16 > div:nth-child(-n + 16):before {
+    content: counter(div); }
+
+.calendar-17 > div:nth-child(-n + 17) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-17 > div:nth-child(-n + 17):before {
+    content: counter(div); }
+
+.calendar-18 > div:nth-child(-n + 18) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-18 > div:nth-child(-n + 18):before {
+    content: counter(div); }
+
+.calendar-19 > div:nth-child(-n + 19) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-19 > div:nth-child(-n + 19):before {
+    content: counter(div); }
+
+.calendar-20 > div:nth-child(-n + 20) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-20 > div:nth-child(-n + 20):before {
+    content: counter(div); }
+
+.calendar-21 > div:nth-child(-n + 21) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-21 > div:nth-child(-n + 21):before {
+    content: counter(div); }
+
+.calendar-22 > div:nth-child(-n + 22) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-22 > div:nth-child(-n + 22):before {
+    content: counter(div); }
+
+.calendar-23 > div:nth-child(-n + 23) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-23 > div:nth-child(-n + 23):before {
+    content: counter(div); }
+
+.calendar-24 > div:nth-child(-n + 24) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-24 > div:nth-child(-n + 24):before {
+    content: counter(div); }
+
+.calendar-25 > div:nth-child(-n + 25) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-25 > div:nth-child(-n + 25):before {
+    content: counter(div); }
+
+.calendar-26 > div:nth-child(-n + 26) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-26 > div:nth-child(-n + 26):before {
+    content: counter(div); }
+
+.calendar-27 > div:nth-child(-n + 27) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-27 > div:nth-child(-n + 27):before {
+    content: counter(div); }
+
+.calendar-28 > div:nth-child(-n + 28) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-28 > div:nth-child(-n + 28):before {
+    content: counter(div); }
+
+.calendar-29 > div:nth-child(-n + 29) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-29 > div:nth-child(-n + 29):before {
+    content: counter(div); }
+
+.calendar-30 > div:nth-child(-n + 30) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-30 > div:nth-child(-n + 30):before {
+    content: counter(div); }
+
+.calendar-31 > div:nth-child(-n + 31) {
+  counter-increment: div;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .calendar-31 > div:nth-child(-n + 31):before {
+    content: counter(div); }
+
+.calendar-mon > div:nth-child(1) {
+  grid-column: 1; }
+
+.calendar-tue > div:nth-child(1) {
+  grid-column: 2; }
+
+.calendar-wed > div:nth-child(1) {
+  grid-column: 3; }
+
+.calendar-thu > div:nth-child(1) {
+  grid-column: 4; }
+
+.calendar-fri > div:nth-child(1) {
+  grid-column: 5; }
+
+.calendar-sat > div:nth-child(1) {
+  grid-column: 6; }
+
+.calendar-sun > div:nth-child(1) {
+  grid-column: 7; }
+
+/*# sourceMappingURL=main.css.map */
