@@ -1,3 +1,57 @@
+$size-item: 100px;
+$days: ("mon":1, "tue":2, "wed":3, "thu":4,"fri":5, "sat":6, "sun":7);
+
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.calendar {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(7, 100px);
+  div {
+    background: #eee;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: $size-item;
+    height: $size-item;
+    transition: transform 0.5s, background 0.5s;
+    display: none;
+    &:before {
+      font-size: 30px;
+      margin: auto;
+    }
+    &:hover {
+      background: pink;
+      transform: translateY(-20px);
+      cursor: pointer;
+    }
+  }
+}
+
+@for $i from 1 through 31 {
+  .calendar-#{$i} {
+    & > div {
+      &:nth-child(-n + #{$i}) {
+        counter-increment: div;
+        display: flex;
+        &:before {
+          content: counter(div);
+        }
+      }
+    }
+  }
+}
+
+@each $day, $count in $days {
+  .calendar-#{$day} {
+    & > div:nth-child(1) {
+      grid-column: $count;
+    }
+  }
 }
